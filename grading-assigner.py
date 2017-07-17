@@ -43,6 +43,9 @@ PROJECT_IDS = [
   53, # Resume Review
   103, # Predicting Boston Housing Prices
   106, # Train a Smartcab to Drive
+  237, # Use Deep Learning to Clone Driving Behavior
+  # 238, # Traffic Sign Classification
+  # 239, # Advanced Lane Finding
 ]
 
 def signal_handler(signal, frame):
