@@ -36,14 +36,14 @@ headers = None
 
 # Examples only - Change this with your own list
 PROJECT_IDS = [
-  25, # Wrangle OpenStreetMap Data
+  # 25, # Wrangle OpenStreetMap Data
   26, # Explore and Summarize Data
   27, # Identify Fraud from Enron Email
   28, # Make Effective Data Visualization
-  53, # Resume Review
-  103, # Predicting Boston Housing Prices
-  106, # Train a Smartcab to Drive
-  237, # Use Deep Learning to Clone Driving Behavior
+  # 53, # Resume Review
+  # 103, # Predicting Boston Housing Prices
+  # 106, # Train a Smartcab to Drive
+  # 237, # Use Deep Learning to Clone Driving Behavior
   # 238, # Traffic Sign Classification
   # 239, # Advanced Lane Finding
 ]
@@ -98,7 +98,7 @@ def fetch_certified_pairs():
     logger.info("Requesting certifications...")
     me_resp = requests.get(ME_URL, headers=headers)
     me_resp.raise_for_status()
-    languages = me_resp.json()['application']['languages'] or ['en-us']
+    languages = ['en-us']
 
     certs_resp = requests.get(CERTS_URL, headers=headers)
     certs_resp.raise_for_status()
